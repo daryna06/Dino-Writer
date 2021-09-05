@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+</head>
+<nav>
+	<div class="title">
+		<h1> Dino Writer </h1> <br> 
+      <div id= "line"> </div> 
+  </div>
+  </nav>
+  <body>
+    <div class= "intro"> 
+      <h3>Hello 👋</h3>
+        <div class= "intro-words"> 
+          <p> Ever need a bit of motivation to write that 1000 word essay? We’ve got you!</p> 
+
+          <p>Use the Dino Writer, the fun Pomodoro timer with a twist.</p>
+
+          <p>Instructions: <br>
+
+          1. Input your goal and break time below <br>
+          <br>
+          2. Continue typing until you reach your goal <br> <br>
+          3. A game will pop out and will close after break time ends (press any key to move dino!). <br> <br>
+          4. When you are done copy your text to save it and refresh the page to restart the timer <br> <br> 
+          4. Repeat! 🦕 🦕 🦕<br>
+        
+          </p>
+        </div>
+    </div>
+        <div class= "goals">
+            <div class= "goals-form">
+              <h2> Set Your Goals</h2>
+                <form>
+                  <input type="text" id="word-count" name= "word-count" placeholder= "Word Count">
+                  <br>
+                  <input type = "text" id="break-time" name="break-time" placeholder= "Break Time">
+                </form>
+              <button onclick= "submitinput()" class= "submit-btn">Submit</button>
+            </div>
+          </div>
+        </div>
+        
+          <textarea type="text" id= "writing" name= "write" placeholder="Start writing..."> </textarea>
+      
+      <div>
+          <p id="counter">
+            Word Count: 
+            <span id="show">   0</span> 
+          </p>
+      </div>
+    <div class= "modal-bg">
+      <div class= "modal">
+        <div class= "buttons">
+          <button  id= "startbtn"> Start </button>
+          <button  id= "pausebtn"> Pause</button>
+          <button  id= "modal-close"> Exit</button>
+          <span id = "score"> Score:0 </span>
+        </div>
+        <div id="dino"></div>
+        <div id="cactus"></div>
+        <div id= "grass"> </div>
+      </div>
+    </div>
+    
+    <footer class= "footer"> 
+      <h4>Made by Son and Daryna </h4>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
