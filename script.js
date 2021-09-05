@@ -25,6 +25,8 @@ function submitinput() {
   var min = document.getElementById("break-time").value;
   var time = parseInt(min) * 60000;
 
+  alert( "Scroll down to enter text 💻 ");
+
   console.log(count, min);
 
   document.querySelector("#writing")
@@ -100,7 +102,7 @@ let isAlive = setInterval(function () {
     document.querySelector("#score").innerText = score;
 
 
-  } else if (cactusLeft > 100 && dinoTop <= 140) {
+  } else if (cactusLeft > 100  && dinoTop <= 140) {
     score = score + 1;
     document.querySelector("#score").innerText = score;
   }
